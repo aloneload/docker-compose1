@@ -1,0 +1,13 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "getway"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka",
+    "adminPassword": "admin",
+    "jwtSecretKey": "68eeef02a7fd2e4dcbe64fec1f265e7b7ec5afcf"
+  }
+}
