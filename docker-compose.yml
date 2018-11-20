@@ -1,7 +1,7 @@
 version: '2'
 services:
     getway-app:
-        image: getway
+        image: aloneload/getway
         environment:
             - SPRING_PROFILES_ACTIVE=dev,swagger
             - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/eureka
