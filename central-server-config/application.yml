@@ -8,6 +8,20 @@ jhipster:
         authentication:
             jwt:
                 secret: 68eeef02a7fd2e4dcbe64fec1f265e7b7ec5afcf
+    cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+        allowed-headers: "*"
+        exposed-headers: "Authorization,Link,X-Total-Count"
+        allow-credentials: true
+        max-age: 1800
+    gateway:
+        rate-limiting:
+            enabled: false
+            limit: 100000
+            duration-in-seconds: 3600
+        authorized-microservices-endpoints: # Access Control Policy, if left empty for a route, all endpoints will be accessible
+            godxi: /api,/v2/api-docs # recommended dev configuration
 
 eureka:
     client:
